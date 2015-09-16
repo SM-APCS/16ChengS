@@ -15,8 +15,20 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        int bob = 0;
+        // TODO code application logic here     
+        final int BASE  = 32;
+        final double CONVERSION_FACTOR = (9.0/5.0);
+        
+        int celsiusTemp = 36;
+        double fahrenheightTemp;
+        
+        fahrenheightTemp = (BASE + celsiusTemp*CONVERSION_FACTOR);
+        System.out.println("36 degrees celsius is: " + fahrenheightTemp + " degrees Fahrenheight");
+        
+        
+        int fahrenheightRounded = (int) fahrenheightTemp;
+        System.out.println("Fahrenheight Tempurature rounded: " + fahrenheightRounded);
+        System.out.println("Original Fahrenheight Temp is : " + fahrenheightTemp);
     }
     
 }

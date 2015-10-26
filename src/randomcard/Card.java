@@ -6,7 +6,8 @@
 package randomcard;
 /**
  *
- * @author spenc_000
+ * Card class that defines what a card is.
+ * A card will have 13 possible face values and four different suits.
  */
 import java.util.Random;
 public class Card {
@@ -19,11 +20,9 @@ public class Card {
             return values()[(int) (Math.random() * values().length)];
         }
     }
-    Suit suit = Suit.getRandom();
-    String phrase;
-    private static Random random = new Random();
-    
-    
+    private Suit suit = Suit.getRandom();
+    private String phrase;
+    private static Random random = new Random();   
     //Returns a string of the card combination
     public String toString(){
         if(faceValue<=10){

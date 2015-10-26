@@ -6,8 +6,10 @@
 package randomcard;
 
 /**
- *
- * @author spenc_000
+ * Random card 
+ * Deals twenty random cards
+ * Developed by Spencer Cheng
+ * 
  */
 
 public class RandomCard {

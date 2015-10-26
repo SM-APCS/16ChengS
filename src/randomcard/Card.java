@@ -10,9 +10,11 @@ package randomcard;
  */
 import java.util.Random;
 public class Card {
+    //Generates a random value for the numbered cards
     private int faceValue=faceValue = random.nextInt(14) + 1;
     enum Suit{
         Spades, Hearts, Clovers, Diamonds;
+        //Creates a random method to randomize the enumerated values
         public static Suit getRandom() {
             return values()[(int) (Math.random() * values().length)];
         }
